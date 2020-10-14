@@ -12,15 +12,18 @@
   </head>
   <body>
     <header class="header">
+      <!-- should be h1 since it's most important -->
       <h2 class="heading">
         <a class="head-nav" href="#">chirpus inc.</a>
         <!-- chirpus inc is a clickable header -->
       </h2>
+      <!-- ***** Be more frugal with class names. Don't need a ton, it makse it more confusing/complicated -->
       <nav class="links">
         <ul>
           <li class="list-item top"><a href="#">Work</a></li>
           <li class="list-item top"><a href="#">About us</a></li>
           <li class="list-item top"><a href="#">Contact</a></li>
+          <!-- didn't need to make a separate nav element for hire us, just a different class to style -->
           <nav class="nav-button">
             <a class="button" href="#">Hire Us</a>
           </nav>
@@ -29,6 +32,7 @@
       </nav>
     </header>
     <main class="main-container">
+      <!-- insert section element to hold the content of elements: h2, p, and nav/anchor -->
       <h2 class="paragraph-heading">chirpus inc.</h2>
       <p class="paragraph">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quia
@@ -36,11 +40,14 @@
         assumenda saepe? Corporis fugiat iusto voluptas amet fuga temporibus
         reprehenderit consequuntur.
       </p>
+      <!-- didn't need nav container, just an anchor -->
       <nav class="nav-button">
         <a class="button" href="#">Call To Action</a>
       </nav>
     </main>
     <footer class="footer">
+      <!-- chirpus inc needs to be a link, also separate from the list items -->
+      <!-- 2 separate "groups" so it's easy to manipulate; chirpus(make anchor) and links -->
       <nav class="links">
         <ul class="footer-list">
           <li class="list-item foot">chirpus inc.</li>
